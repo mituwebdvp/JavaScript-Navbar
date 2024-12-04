@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./library/font-awesome/css/font-awesome.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <main>
+    <header class="bg-[#f5f5f5] flex justify-around p-4 relative items-center">
+        <div class="text-3xl text-black">
+            <i class="fa fa-bars" aria-hidden="true" id="menubar"></i>
+            <div class="w-[300px] h-[820px] absolute hidden top-0 left-0" id="navbar">
+                
+                    <ul class="text-xl bg-red-100  font-semibold leading-10 poppins h-full w-full p-5" >
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                    </ul>
+                
+                <button class="top-0 right-0  hidden absolute px-8 py-5" id="close">
+                    <i class="fa fa-times" aria-hidden="true"></i> 
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <img src="./image/stock-vector-gold-and-silver-circle-star-logo-template-1959869302.jpg" class="w-[50px] h-[50px] rounded-full" alt="">
+        </div>
+
+        <div class="text-3xl text-black flex gap-x-10 items-center">
+            <button>
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+            </button>
+
+            <button class="dropdown">
+                <span class="user-icon">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </span>
+
+                <div class="dropdown-items">
+                    <ul class="dropdown-items-ul">
+                        <li class="dropdown-items-li">
+                            <a href="#">Profile</a>
+                        </li>
+                        <li class="dropdown-items-li">
+                            <a href="#">Settings</a>
+                        </li>
+                        <li class="dropdown-items-li">
+                            <a href="#">Orders</a>
+                        </li>
+                        <hr class="divider">
+                        <li class="dropdown-items-li">
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <div>
+        <P class="border-solid border-2 py-4 text-center w-[500px] mx-auto" id="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, fugiat.</P>
+    </div>
+<br>
+    <form class="w-[500px] mx-auto">
+        <label for="">Name</label>
+        <input type="text" id="name" class="border-2 px-4 py-2" placeholder="Enter Your Name">
+        <button type="submit" id="submit" class="block px-5 py-2 bg-red-400 rounded-full mt-5 font-bold">Submit</button>
+    </form>
+
+<br>
+<br>
+
+    <div class="w-[500px] mx-auto">
+        <label for="cars">Choose a food:</label> <br>
+        <select name="cars" id="selectId">
+            <option value="volvo">Fried Rice</option>
+            <option value="saab">chawmin</option>
+            <option value="mercedes">Coke</option>
+            <option value="fast-food">Halim</option>
+            <option value="ice">Ice-creame</option>
+            <option value="food">Fuska</option>
+        </select>
+    </div>
+  </main>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
